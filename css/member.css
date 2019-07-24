@@ -284,18 +284,18 @@ button.delete-btn{
 @media screen and (max-width:450px){
     div.content{
         width:100%;
-        margin: 0.4em auto;
+        margin: 0em auto;
     }
 }
 @media screen and (max-width:400px){
     div.content{
         width:100%;
-        margin: 0.4em auto;
+        margin: 0em auto;
     }
 }
 @media screen and (max-width:320px){
     div.content{
         width:100%;
-        margin: 0.4em auto;
+        margin: 0em auto;
     }
 }
