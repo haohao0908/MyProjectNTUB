@@ -19,11 +19,13 @@ div.container-fluid {
     position: absolute;
     top: 3.3em;
     height: 100%;
-    background: #4D6C74;
 }
 div.content{
     width:30%;
     margin: 6em auto;
+}
+a:hover{
+    text-decoration: none;
 }
 /*----------------------------------*/
 
