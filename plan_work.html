@@ -29,6 +29,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
             <ul class="navbar-nav">
                 <li>
                     <a href="member.html"> <i class="far fa-user fa-lg"></i>會員</a>
@@ -130,7 +131,7 @@
 
                     <input type="text" class="form-control input-style" placeholder="尚未開始">
 
-                    <div class="dropright">
+                    <div class="drpdown">
 
                         <button class="btn btn-link btn-header" type="button" id="dropdownMenuLink"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -150,7 +151,7 @@
 
                                             <li><a href="#">新增卡片</a></li>
                                             <li><a href="#">刪除這個列表的所有卡片</a></li>
-
+                                            <li><a href="#">封存這個列表</a></li>
                                         </ul>
 
                                         <ul class="dropdown-right-list" data-stopPropagation="true">
@@ -205,9 +206,8 @@
 
                                             </div>
 
-                                            <li><a href="#">封存這個列表</a></li>
-
                                         </ul>
+
                                     </div>
                                 </div>
                             </div>
@@ -223,7 +223,7 @@
 
 
                     <!--卡片-->
-                    <div class="card work-card">
+                    <div class="card work-card" id="card-1">
 
                         <div class="work-card-header">
 
@@ -342,7 +342,7 @@
 
                     <input type="text" class="form-control input-style" placeholder="執行中">
 
-                    <div class="dropright">
+                    <div class="drodown">
 
                         <button class="btn btn-link btn-header" type="button" id="dropdownMenuLink"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -362,7 +362,7 @@
 
                                             <li><a href="#">新增卡片</a></li>
                                             <li><a href="#">刪除這個列表的所有卡片</a></li>
-
+                                            <li><a href="#">封存這個列表</a></li>
                                         </ul>
 
                                         <ul class="dropdown-right-list" data-stopPropagation="true">
@@ -418,9 +418,8 @@
 
                                             </div>
 
-                                            <li><a href="#">封存這個列表</a></li>
-
                                         </ul>
+
                                     </div>
                                 </div>
                             </div>
@@ -599,7 +598,7 @@
                                                     <div class="label-total">
                                                         <a href="#" class="label-color-green-a"
                                                             onmousemove="removeClassType(this)">
-                                                            123
+                                                            <span class="label-color-name">測試</span>
                                                         </a>
                                                         <!--左側編輯標籤-->
                                                         <div class="dropdown-edit">
@@ -851,21 +850,7 @@
 
                                 </div>
                                 <!---->
-                                <!--詳細描述-->
-                                <!-- <div class="modal-description">
 
-                                    <div class="modal-description-header">
-
-                                        <i class="fas fa-bars icon-description fa-lg"></i>
-                                        <div class="modal-description-name">描述</div>
-
-                                    </div>
-
-                                    <textarea class="form-control describle-text" rows="2"
-                                        placeholder="新增更多詳細敘述...."></textarea>
-
-                                </div> -->
-                                <!---->
                                 <!--檔案-->
                                 <div class="modal-file">
 
@@ -917,8 +902,6 @@
 
                                             <div class="dropdown-member-edit">
 
-                                                <input class="member-search" type="text" placeholder="搜尋成員">
-
                                                 <a class="dropdown-img-member-set" href="#">
                                                     <img src="imgs/gray-cat.png" class="dropdown-member-img">
                                                     <div class="member-name">張智皓(JD12358)</div>
@@ -944,7 +927,7 @@
                                             <div class="dropdown-label-header">
                                                 <span class="dropdown-label-header-title">標籤</span>
                                             </div>
-                                            
+
                                             <div class="label-color-all" name="label-color-all-right">
 
                                                 <div class="label-total">
@@ -1039,7 +1022,7 @@
                                                 <div class="label-total">
                                                     <a href="#" class="label-color-yellow-a"
                                                         onmousemove="removeClassType(this)">
-                                                        這是黃色
+                                                        <span class="label-color-name">這是黃色</span>
                                                     </a>
                                                     <button class="label-color-edit-btn"><i
                                                             class="fas fa-pen"></i></button>
@@ -1048,7 +1031,7 @@
                                                 <div class="label-total">
                                                     <a href="#" class="label-color-orange-a"
                                                         onmousemove="removeClassType(this)">
-                                                        這是橘色
+                                                        <span class="label-color-name">這是橘色</span>
                                                     </a>
                                                     <button class="label-color-edit-btn"><i
                                                             class="fas fa-pen"></i></button>
@@ -1057,7 +1040,7 @@
                                                 <div class="label-total">
                                                     <a href="#" class="label-color-red-a"
                                                         onmousemove="removeClassType(this)">
-                                                        這是紅色
+                                                        <span class="label-color-name">這是紅色</span>
                                                     </a>
                                                     <button class="label-color-edit-btn"><i
                                                             class="fas fa-pen"></i></button>
@@ -1066,7 +1049,7 @@
                                                 <div class="label-total">
                                                     <a href="#" class="label-color-purple-a"
                                                         onmousemove="removeClassType(this)">
-                                                        這是紫色
+                                                        <span class="label-color-name">這是紫色</span>
                                                     </a>
                                                     <button class="label-color-edit-btn"><i
                                                             class="fas fa-pen"></i></button>
@@ -1075,7 +1058,7 @@
                                                 <div class="label-total">
                                                     <a href="#" class="label-color-blue-a"
                                                         onmousemove="removeClassType(this)">
-                                                        這是藍色
+                                                        <span class="label-color-name">這是藍色</span>
                                                     </a>
                                                     <button class="label-color-edit-btn"><i
                                                             class="fas fa-pen"></i></button>
@@ -1237,10 +1220,8 @@
                                                         <select id="kanboard-value" onchange="Kanboard_Value(this.id)">
                                                             <optgroup label="計畫">
                                                                 <option>我的計畫</option>
-                                                                <option>專題製作
-                                                                </option>
-                                                                <option>文件製作
-                                                                </option>
+                                                                <option>專題製作</option>
+                                                                <option>文件製作</option>
                                                             </optgroup>
                                                         </select>
                                                     </div>
@@ -1282,9 +1263,15 @@
                                     <!---->
 
                                     <!--刪除卡片-->
-                                    <a class="button-link change-card-deletes" href="#" data-toggle="modal"
-                                        data-target="#card-member-delete"><span style="margin-left: 0.5em;"><i
-                                                class="fas fa-ban" style="margin-right: 0.45em;"></i>刪除</span></a>
+                                    <div class="delete-card">
+                                        <a class="button-link change-card-deletes" href="#"><span
+                                                style="margin-left: 0.5em;"><i class="fas fa-ban"
+                                                    style="margin-right: 0.45em;"></i>刪除</span></a>
+                                        <a class="change-card-deletes-check" href="#"><span
+                                                style="margin-left: 0.5em;"><i class="fas fa-ban"
+                                                    style="margin-right: 0.45em;"></i>點選刪除卡片</span></a>
+                                        <button type="button" class="btn-delete-close">取消</button>
+                                    </div>
                                     <!---->
 
                                 </div>
@@ -1302,25 +1289,6 @@
         </div>
 
 
-        <!-- Modal 會員點選刪除出現-->
-        <div class="modal fade" id="card-member-delete" tabindex="-1" role="dialog" aria-labelledby="card-member-delete"
-            aria-hidden="true">
-            <div class="modal-dialog" style="max-width: 19em;" role="document">
-                <div class="modal-content" style="border: 5px solid rgba(255, 255, 255, 0.5) !important;">
-                    <div class="modal-header" style="background: rgb(231, 81, 21);color:#fff;border-radius: 4px;">
-                        <h5 class="modal-title" style="border-radius: 4px; font-size:1em;">確認是否刪除?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#fff;">
-                            <span aria-hidden="true" style="color:#fff;">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body-delete">
-                        <button type="button" class="btn-delete-cancel" data-dismiss="modal"
-                            aria-label="Close">取消</button>
-                        <button type="button" class="btn-delete-save">確認</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Modal 設定會員權限-->
         <div class="modal fade" id="member-set" tabindex="-1" role="dialog" aria-labelledby="member-set"
@@ -1387,18 +1355,19 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./js/jquery.ui.touch-punch.min.js"></script>
     <!-- <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script> -->
-    <script src="./js/add-list.js"></script>
     <script src="./js/textarea.js"></script>
+    <script src="./js/add-list.js"></script>
+
     <script src="./js/label.js"></script>
-    <script src="./js/textshow.js"></script>
+    <script src="./js/text-show.js"></script>
     <script src="./js/stop_dropdown.js"></script>
     <script src="./js/add_label.js"></script>
     <script src="./js/left-dropdown-show.js"></script>
     <script src="./js/move_card.js"></script>
-    <script src="./js/tracks-show.js"></script>
     <script src="./js/member-delete.js"></script>
     <script src="./js/dropdown-list.js"></script>
     <script src="./js/Sortable.js"></script>
+    <script src="./js/modal-delete.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>

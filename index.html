@@ -69,6 +69,7 @@
             <!--尚未開始專案------------------------------->
             <div class="card-deck" >
                 <!-- card編號也要自動產生 -->
+
                 <div class="card" name="delete-tub">
                     <div class="card-color-body">
                         <a class="card-link" href="plan_work.html">
@@ -197,7 +198,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tub-set">
+            <div class="tub-set test">
                 <a href='#' class="tub-set-a"><i class="fas fa-trash-alt" style="font-size:3em;"></i></a>
             </div>
             <!--專案齒輪設定內容---------------------------------->
@@ -218,17 +219,21 @@
                                     <input type="text" class="form-control" name="">
                                 </div>
                                 <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">修改密碼:</label>
+                                    <input type="text" class="form-control" name="">
+                                </div>
+                                <div class="form-group">
                                     <label for="message-text" class="col-form-label">專案代碼:</label>
                                     <button onclick="myFunction()" class="modal-btn">copy</button>
                                     <input type="text" class="form-control" id="copy">
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">開始日期:</label>
-                                    <input type="datetime-local" name="">
+                                    <input type="datetime-local"  class="datetime-local-set" name="">
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">結束日期:</label>
-                                    <input type="datetime-local" name="">
+                                    <input type="datetime-local" class="datetime-local-set" name="">
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="close-btn" data-dismiss="modal">關閉</button>
@@ -263,11 +268,11 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">開始日期:</label>
-                                    <input type="datetime-local" name="">
+                                    <input type="datetime-local" class="datetime-local-set" name="">
                                 </div>
                                 <div class="form-group">
                                     <label for="message-text" class="col-form-label">結束日期:</label>
-                                    <input type="datetime-local" name="">
+                                    <input type="datetime-local" class="datetime-local-set" name="">
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="close-btn" data-dismiss="modal">關閉</button>
@@ -289,10 +294,10 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/copy.js"></script>
-    <script src="js/width.js"></script>
-    <script src="js/text-show.js"></script>
-    <script src="js/move_delete.js"></script>
+    <script src="./js/copy.js"></script>
+    <script src="./js/width.js"></script>
+    <script src="./js/text-show.js"></script>
+    <script src="./js/move_delete.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>

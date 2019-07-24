@@ -17,14 +17,14 @@ div.container-fluid {
     padding: 0 !important;
     margin: 0 !important;
     position: absolute;
-    top: 3.5em;
+    top: 3.4em;
     height: 100%;
 }
 div.content{
     width:30%;
     margin: 6em auto;
 }
-a:hover {
+a:hover{
     text-decoration: none;
 }
 /*----------------------------------*/
@@ -300,18 +300,18 @@ button.delete-btn{
 @media screen and (max-width:450px){
     div.content{
         width:100%;
-        margin: 0em auto;
+        margin: 0.4em auto;
     }
 }
 @media screen and (max-width:400px){
     div.content{
         width:100%;
-        margin: 0em auto;
+        margin: 0.4em auto;
     }
 }
 @media screen and (max-width:320px){
     div.content{
         width:100%;
-        margin: 0em auto;
+        margin: 0.4em auto;
     }
 }
