@@ -2006,17 +2006,16 @@
     }
 
     div.plus-square-admin {
-        position: relative;
+        position: absolute;
+        top:0.5em;
+        right: 1em;;
         font-size: 1.1em;
-        left: 11em;
-        bottom:0.5em;
     }
 
     div.double-down-member {
-        position: relative;
-        top: 1em;
-        right: 1.5em;
-        left: 0em;
+        position: absolute;
+        top:1.8em;
+        right: 1.2em;;
         font-size: 1.1em;
     }
 
