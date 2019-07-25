@@ -17,7 +17,7 @@ html, body {
 /*----------------------------------*/
 
 nav.navbar {
-    position: fixed;
+    position: relative;
 	top:0;
     left:0;
     background-color: #17294C;
