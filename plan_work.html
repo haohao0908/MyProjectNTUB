@@ -529,11 +529,17 @@
                             <i class="fas fa-times fa-lg"></i>
                         </a>
                     </div>
-
+                    <!--組長推播-->
+                    <a href="#" class="admin-push-text" data-target="#modal-admin-push" data-toggle="modal"><i
+                            class="fas fa-bell"></i></a>
+                    <!---->
                 </div>
 
             </div>
             <!---->
+
+
+
         </div>
 
 
@@ -1337,12 +1343,161 @@
             </div>
         </div>
 
-    </div>
 
 
-    </div>
+        <!-- Modal組長推播-->
+        <div class="modal fade" id="modal-admin-push" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header modal-header-admin-push">
+                        <h5 class="modal-title">前三公告</h5>
+
+                        <div class="plus-square-admin">
+
+                            <a href="#"><i class="far fa-plus-square fa-lg" data-toggle="modal"
+                                    data-target="#admin-text"></i></a>
+
+                        </div>
+
+                        <div class="double-down-member">
+
+                            <a href="#" id="admin-text-show"><i class="fas fa-angle-double-down fa-lg"></i></a>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="show-messenge">
+
+                            <div class="messenge">
+
+                                <div class="messenge-text">
+                                    請各位負責好自己的部分，謝謝。
+                                </div>
+
+                                <div class="time-show">
+                                    2019/07/25 下午03:47
+                                </div>
+
+                            </div>
+
+                            <hr class="hr-admin">
+
+                        </div>
+                        <div class="show-messenge">
+
+                            <div class="messenge">
+
+                                <div class="messenge-text">
+                                    請各位負責好自己的部分，謝謝。
+                                </div>
+
+                                <div class="time-show">
+                                    2019/07/25 下午03:47
+                                </div>
+
+                            </div>
+
+                            <hr class="hr-admin">
+
+                        </div>
+
+                        <div class="show-messenge">
+
+                            <div class="messenge">
+
+                                <div class="messenge-text">
+                                    請各位負責好自己的部分，謝謝。
+                                </div>
+
+                                <div class="time-show">
+                                    2019/07/25 下午03:47
+                                </div>
+
+                            </div>
+
+                            <hr class="hr-admin">
+                            
+                        </div>
+                        
+                        <div class="show-messenge" name="modal-messenge-show">
+
+                                <div class="messenge">
+    
+                                    <div class="messenge-text">
+                                        請各位負責好自己的部分，謝謝。
+                                    </div>
+    
+                                    <div class="time-show">
+                                        2019/07/25 下午03:47
+                                    </div>
+    
+                                </div>
+    
+                                <hr class="hr-admin">
+                                
+                            </div>
+                            
+                        <div class="show-messenge" name="modal-messenge-show">
+
+                                <div class="messenge">
+    
+                                    <div class="messenge-text">
+                                        請各位負責好自己的部分，謝謝。
+                                    </div>
+    
+                                    <div class="time-show">
+                                        2019/07/25 下午03:47
+                                    </div>
+    
+                                </div>
+    
+                                <hr class="hr-admin">
+                                
+                            </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!---->
+        <!-- Modal組長新增訊息-->
+        <div class="modal fade" id="admin-text" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="admin-text">新增訊息</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">時間:</label>
+                                <input type="datetime-local" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">訊息:</label>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">關閉</button>
+                        <button type="button" class="btn btn-light">送出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
+
 
     <!-----------------------------------scrpit-------------------------------------------->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -1366,6 +1521,7 @@
     <script src="./js/dropdown-list.js"></script>
     <script src="./js/Sortable.js"></script>
     <script src="./js/modal-delete.js"></script>
+    <script src="js/admin_messenge.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
