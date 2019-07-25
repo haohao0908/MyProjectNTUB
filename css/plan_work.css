@@ -1830,44 +1830,25 @@
     }
 
     a.change-card-deletes-check {
-        position: absolute;
-        top: -0.5em;
+        position: relative;
         background: rgba(231, 34, 93);
-        width: 100%;
-        color: #fff;
-        box-shadow: none;
-        border: none;
-        border-radius: 3px;
-        box-sizing: border-box;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        height: 32px;
-        margin-top: 8px;
-        margin-left: 0.5em;
-        max-width: 15em;
-        overflow: hidden;
-        text-decoration: none;
-        text-overflow: ellipsis;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        white-space: nowrap;
-        transition-duration: 85ms;
-        transition-timing-function: ease;
         z-index: 5;
     }
-
-    .btn-delete-close {
+    a.change-card-deletes-check:hover{
+        background: rgba(231, 34, 93);
+    }
+    /* .test{
         position: relative;
-        bottom: 2.2em;
-        left: 15em;
+    } */
+    .btn-delete-close {
+        position: absolute;
+        top:0.4em;
+        left:75%;
         background: rgb(255, 255, 255);
         border: none;
         color: black;
         font-size: 0.8em;
-        z-index: 10;
+        z-index: 20;
     }
 
     /*---------------------------------- */
