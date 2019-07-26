@@ -11,7 +11,7 @@ $(function () {
     $("#work-total-move").disableSelection();
     //卡片互相移動
     $("#work-body-move-1,#work-body-move-2").sortable({
-        connectWith: "#work-body-move-1,#work-body-move-2",items:'.work-card',distance: 15});
+        connectWith: "#work-body-move-1,#work-body-move-2",items:'.work-card'});
     $("#work-body-move-1,#work-body-move-2").disableSelection();
     //input、textarea可以點選拖曳也可以編輯
     $('input').on('click', function(e) { 
@@ -25,15 +25,19 @@ $(function () {
          $(this).focus(); 
         } 
     }); 
-    $('textarea').on('click', function(e) { 
-        $(this).trigger({ 
-         type: 'mousedown', 
-         which: 3 
-        }); 
-    }); 
     $('textarea').on('mousedown', function(e) { 
-        if(e.which == 3){ 
          $(this).focus(); 
-        } 
     }); 
+});
+$(document).ready(function(){
+    $(window).resize(function() {
+        var wdth=$(window).width();
+        if(wdth<='1280'){
+            $(".work-card").on("taphold",function(){
+                $("#work-body-move-1,#work-body-move-2").sortable({
+                    connectWith: "#work-body-move-1,#work-body-move-2",items:'.work-card'});
+                $("#work-body-move-1,#work-body-move-2").disableSelection();
+            });
+        }
+    });
 });

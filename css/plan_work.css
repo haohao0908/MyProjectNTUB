@@ -1985,18 +1985,16 @@
         font-size: 2.5em;
         right: 0.5em;
     }
-
+    div.admin-icon-set{
+        display: flex;
+        justify-content: flex-end;
+    }
     div.plus-square-admin {
-        position: absolute;
-        top:0.5em;
-        right: 1em;;
         font-size: 1.1em;
+        margin-right: 0.5em;
     }
 
-    div.double-down-member {
-        position: absolute;
-        top:1.8em;
-        right: 1.2em;;
+    div.double-down-member {        
         font-size: 1.1em;
     }
 
@@ -2017,11 +2015,35 @@
     .form-group{
         padding: 1em 0.5em;
     }
-    @media screen and (max-width:700px){
+    @media screen and (max-width:460px){
+        .btn-delete-close {
+            position: absolute;
+            top:0.4em;
+            left:50%;
+            background: rgb(255, 255, 255);
+            border: none;
+            color: black;
+            font-size: 0.8em;
+            z-index: 20;
+        }
+    }
+    @media screen and (max-width:380px){
         .btn-delete-close {
             position: absolute;
             top:0.4em;
             left:58%;
+            background: rgb(255, 255, 255);
+            border: none;
+            color: black;
+            font-size: 0.8em;
+            z-index: 20;
+        }
+    }
+    @media screen and (max-width:320px){
+        .btn-delete-close {
+            position: absolute;
+            top:0.4em;
+            left:65%;
             background: rgb(255, 255, 255);
             border: none;
             color: black;
