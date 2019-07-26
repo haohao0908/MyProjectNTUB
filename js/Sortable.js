@@ -1,5 +1,4 @@
 $(function () {
-
     //成員管理者移動
     $("#admin-move,#member-move").sortable({
         axis: "x",
@@ -11,7 +10,7 @@ $(function () {
         axis: "x", items: ".work-total",cancel:".dropright"});
     $("#work-total-move").disableSelection();
     //卡片互相移動
-        
+
     $("#work-body-move-1,#work-body-move-2").sortable({
         connectWith: "#work-body-move-1,#work-body-move-2",items:'.work-card'});
     $("#work-body-move-1,#work-body-move-2").disableSelection();
