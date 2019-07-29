@@ -12,8 +12,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Handlee" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/plan_work.css">
+    <link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="css/Plan.css">
 
 </head>
 
@@ -32,13 +32,13 @@
 
             <ul class="navbar-nav">
                 <li>
-                    <a href="member.html"> <i class="far fa-user fa-lg"></i>會員</a>
+                    <a href="Member.html"> <i class="far fa-user fa-lg"></i>會員</a>
                 </li>
                 <li>
-                    <a href="index.html"><i class="fas fa-book fa-lg"></i>計畫</a>
+                    <a href="Index.html"><i class="fas fa-book fa-lg"></i>計畫</a>
                 </li>
                 <li>
-                    <a href="mywork.html"> <i class="far fa-edit fa-lg"></i>我的工作</a>
+                    <a href="Mywork.html"> <i class="far fa-edit fa-lg"></i>我的工作</a>
                 </li>
             </ul>
 
@@ -50,7 +50,7 @@
             <div class="study-logout">
                 <button class="btn btn-light btn-navbar-study" type="submit">教學<i class="fas fa-question-circle fa-lg"
                         style="padding-left:5px;"></i></button>
-                <button class="btn btn-danger btn-navbar-logout" type="submit" style="margin-left:0.5em;">登出</button>
+                <button class="btn btn-danger btn-navbar-logout" type="submit" style="margin-left:0.5em;" onclick="location.href='Login.html'">登出</button>
             </div>
 
         </div>
@@ -222,7 +222,7 @@
 
 
                     <!--卡片-->
-                    <div class="card work-card" id="card-1">
+                    <div class="card work-card">
 
                         <div class="work-card-header">
 
@@ -1509,19 +1509,21 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./js/jquery.ui.touch-punch.min.js"></script>
-    <script src="./js/textarea.js"></script>
-    <script src="./js/add-list.js"></script>
-    <script src="./js/label.js"></script>
-    <script src="./js/text-show.js"></script>
-    <script src="./js/stop_dropdown.js"></script>
-    <script src="./js/add_label.js"></script>
-    <script src="./js/left-dropdown-show.js"></script>
-    <script src="./js/move_card.js"></script>
-    <script src="./js/member-delete.js"></script>
-    <script src="./js/dropdown-list.js"></script>
-    <script src="./js/modal-delete.js"></script>
-    <script src="js/admin_messenge.js"></script>
-    <script src="./js/Sortable.js"></script>
+    
+    <script src="./js/Plan_Draggable.js"></script>
+    <script src="./js/Plan_AddTextarea.js"></script>
+    <script src="./js/Plan_AddList.js"></script>
+    <script src="./js/Plan_CardLabelToggle.js"></script>
+    <script src="./js/Plan_ModalLabelLeft.js"></script>
+    <script src="./js/Plan_ModalLabelRight.js"></script>
+    <script src="./js/Plan_ModalMoveCard.js"></script>
+    <script src="./js/Plan_ModalDeleteCard.js"></script>
+    <script src="./js/Plan_ListDropdown.js"></script>
+    <script src="./js/Plan_MemberDelete.js"></script>
+    <script src="./js/Plan_AdminMessenge.js"></script>
+    <script src="./js/Plan_MoveHoverText.js"></script>
+    <script src="./js/Plan_StopPropagation.js"></script>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
