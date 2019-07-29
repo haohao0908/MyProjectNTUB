@@ -1,4 +1,5 @@
-$(document).ready(function () {
+$(function () {
+    $(window).width();
     //成員管理者移動
     $("#admin-move,#member-move").sortable({
         axis: "x",
@@ -6,31 +7,48 @@ $(document).ready(function () {
     });
     $("#admin-move,#member-move").disableSelection();
     //列表移動
-    $("#work-total-move").sortable({
-        axis: "x", items: ".work-total", cancel: ".dropright"
-    });
-    $("#work-total-move").disableSelection();
+
     //卡片互相移動
-    var wdth = $(window).width();
-    if (wdth < 1024) {
-        $('.work-card').mousedown(function (e) {
+    if ($(window).width() < 1024) {
+
+        $(".work-card").mousedown(function (e) {
             clearTimeout(this.downTimer);
+
             this.downTimer = setTimeout(function () {
                 $("#work-body-move-1,#work-body-move-2").sortable({
-                    connectWith: "#work-body-move-1,#work-body-move-2", items: '.work-card'
+                    connectWith: "#work-body-move-1,#work-body-move-2"
                 });
                 $("#work-body-move-1,#work-body-move-2").disableSelection();
-            }, 2000);
+            }, 1000);
         }).mouseup(function (e) {
             clearTimeout(this.downTimer);
         });
+        // $(".work-total").mousedown(function (e) {
+        //     clearTimeout(this.downTimer);
+        //     this.downTimer = setTimeout(function () {
+        //         $("#work-total-move").sortable({
+        //             axis: "x", items: ".work-total", cancel: ".dropright"
+        //         });
+        //         $("#work-total-move").disableSelection();
+        //     }, 2000);
+        // }).mouseup(function (e) {
+        //     clearTimeout(this.downTimer);
+        // });
     }
     else {
         $("#work-body-move-1,#work-body-move-2").sortable({
-            connectWith: "#work-body-move-1,#work-body-move-2", items: '.work-card'
+            connectWith: "#work-body-move-1,#work-body-move-2"
         });
+        
         $("#work-body-move-1,#work-body-move-2").disableSelection();
+
+        $("#work-total-move").sortable({
+            axis: "x", items: ".work-total", cancel: ".dropright"
+        });
+        $("#work-total-move").disableSelection();
+
     }
+
 
     //input、textarea可以點選拖曳也可以編輯
     $('input').on('click', function () {
