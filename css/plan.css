@@ -24,7 +24,7 @@
     div.deck {
         position: absolute;
         top: 6.9em;
-        bottom:0;
+        bottom: 0;
         overflow-x: auto;
         overflow-y: hidden;
         width: 100%;
@@ -70,7 +70,7 @@
     /*----------------------------------*/
 
     div.member-bottom {
-        /* position: absolute; */
+        position: relative;
         display: flex;
         /* top: 0; */
         width: 100%;
@@ -80,21 +80,27 @@
         overflow-y: hidden;
         background: rgba(23, 41, 76, 0.9);
     }
-
-    div.administrator-total, div.member-total {
+    div.test-1{
+        display: flex;
+    }
+    div.test{
+        display: flex;
+    }
+    div.administrator-img {
         display: flex;
         align-items: center;
+        padding-right: 0.5em;
     }
 
-    div.administrator-img, div.member-img {
+    div.member-img {
         display: flex;
         align-items: center;
-        margin: 0 2em;
-        width: 50%;
+        padding-right: 0.5em;
     }
 
     div.plan-name {
-        display: inline-block;
+        display: flex;
+        align-items: center;
         padding-right: 0.4em;
         padding-left: 0.4em;
         font-weight: 700;
@@ -104,8 +110,7 @@
         font-size: 1.2em;
     }
 
-    span.admin-name {
-        display: inline-block;
+    div.admin-name {
         white-space: nowrap;
         color: #ffffff;
         font-size: 0.8em;
@@ -113,6 +118,8 @@
         background: #999999;
         padding: 0.3em;
         border-radius: 4px;
+        display: flex;
+        align-self: center;
     }
 
     img.img-photo {
@@ -133,7 +140,7 @@
 
     div.hightline {
         display: flex;
-        width: 0.1em;
+        width: 5em;
         height: 1.8em;
         align-self: center;
         margin: 0 0.5em;
@@ -142,8 +149,9 @@
 
     div.admin-set {
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        align-self: center;
+        margin-left: auto;
+        /* min-width: 10%; */
     }
 
     button.btn-admin-set {
@@ -155,7 +163,7 @@
     }
 
     .member-img-trash {
-        position: relative;
+        /* position: relative; */
     }
 
     .member-delete-icon {
@@ -226,7 +234,7 @@
     }
 
     div.work-card:hover {
-        background-color: rgba(216, 216, 216, 0.13);
+        background-color: rgba(216, 216, 216, 0.822);
     }
 
     .work-header {
@@ -1834,16 +1842,19 @@
         background: rgba(231, 34, 93);
         z-index: 5;
     }
-    a.change-card-deletes-check:hover{
+
+    a.change-card-deletes-check:hover {
         background: rgba(231, 34, 93);
     }
+
     /* .test{
         position: relative;
     } */
+
     .btn-delete-close {
         position: absolute;
-        top:0.4em;
-        left:75%;
+        top: 0.4em;
+        left: 75%;
         background: rgb(255, 255, 255);
         border: none;
         color: black;
@@ -1968,7 +1979,9 @@
         border-bottom: 1px solid #dee2e6 !important;
         background: rgb(245, 201, 106)
     }
-
+    .modal-admin-border{
+        border: 3px solid #fff;
+    }
     .hr-admin {
         margin-top: 0;
         margin-bottom: 0;
@@ -1988,16 +2001,18 @@
         right: 0.5em;
         /* right:3.2em; */
     }
-    div.admin-icon-set{
+
+    div.admin-icon-set {
         display: flex;
         justify-content: flex-end;
     }
+
     div.plus-square-admin {
         font-size: 1.1em;
         margin-right: 0.5em;
     }
 
-    div.double-down-member {        
+    div.double-down-member {
         font-size: 1.1em;
     }
 
@@ -2015,14 +2030,16 @@
         flex: 1;
         padding: 1em;
     }
-    .form-group{
+
+    .form-group {
         padding: 1em 0.5em;
     }
-    @media screen and (max-width:460px){
+
+    @media screen and (max-width:460px) {
         .btn-delete-close {
             position: absolute;
-            top:0.4em;
-            left:50%;
+            top: 0.4em;
+            left: 50%;
             background: rgb(255, 255, 255);
             border: none;
             color: black;
@@ -2030,11 +2047,12 @@
             z-index: 20;
         }
     }
-    @media screen and (max-width:380px){
+
+    @media screen and (max-width:380px) {
         .btn-delete-close {
             position: absolute;
-            top:0.4em;
-            left:58%;
+            top: 0.4em;
+            left: 58%;
             background: rgb(255, 255, 255);
             border: none;
             color: black;
@@ -2042,11 +2060,12 @@
             z-index: 20;
         }
     }
-    @media screen and (max-width:320px){
+
+    @media screen and (max-width:320px) {
         .btn-delete-close {
             position: absolute;
-            top:0.4em;
-            left:65%;
+            top: 0.4em;
+            left: 65%;
             background: rgb(255, 255, 255);
             border: none;
             color: black;

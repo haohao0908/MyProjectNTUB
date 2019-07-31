@@ -1,14 +1,32 @@
-$(document).ready(function() {
+
+
+$(document).ready(function () {
     $(window).width();
+    var mouseEventTypes = {
+        touchstart: "mousedown",
+        touchmove: "mousemove",
+        touchend: "mouseup"
+    };
+
+    for (originalType in mouseEventTypes) {
+        document.addEventListener(originalType, function (originalEvent) {
+            event = document.createEvent("MouseEvents");
+            touch = originalEvent.changedTouches[0];
+            event.initMouseEvent(mouseEventTypes[originalEvent.type], true, true,
+                window, 0, touch.screenX, touch.screenY, touch.clientX,
+                touch.clientY, touch.ctrlKey, touch.altKey, touch.shiftKey,
+                touch.metaKey, 0, null);
+            originalEvent.target.dispatchEvent(event);
+        });
+    }
     //成員管理者移動
+    //列表移動
     $("#admin-move,#member-move").sortable({
-        axis: "x",
-        connectWith: "#admin-move,#member-move"
+        axis: "x", connectWith: "#admin-move,#member-move", opacity: 0.7, items: ".member-img-trash"
     });
     $("#admin-move,#member-move").disableSelection();
-    //列表移動
     if ($(window).width() < 1024) {
-        $('.work-card').touchstart(function (event) {
+        $('.work-card').mousedown(function (event) {
             clearTimeout(this.downTimer);
             this.downTimer = setTimeout(function () {
                 $("#work-body-move-1,#work-body-move-2").sortable({
@@ -17,7 +35,7 @@ $(document).ready(function() {
                 });
                 $("#work-body-move-1,#work-body-move-2").disableSelection();
             }, 1000);
-        }).touchend(function (e) {
+        }).mouseup(function (e) {
             clearTimeout(this.downTimer);
             $("#work-body-move-1,#work-body-move-2").sortable({ disabled: true });
         });
