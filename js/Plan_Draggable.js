@@ -8,7 +8,7 @@ for (var i = 0; i < elements.length; i++) {
                 connectWith: "#work-body-move-1,#work-body-move-2"
             });
             $("#work-body-move-1,#work-body-move-2").disableSelection();
-        }, 1000)
+        }, 2500)
     };
     elements[0].ontouchend = function () {
         clearTimeout(this.downTimer);
