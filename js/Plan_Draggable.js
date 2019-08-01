@@ -10,7 +10,7 @@ for (var i = 0; i < elements.length; i++) {
             $("#work-body-move-1,#work-body-move-2").disableSelection();
         }, 2500)
     };
-    elements[0].ontouchend = function () {
+    elements[i].ontouchend = function () {
         clearTimeout(this.downTimer);
         $("#work-body-move-1,#work-body-move-2").sortable({ disabled: true });
     };
