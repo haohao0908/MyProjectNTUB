@@ -14,8 +14,6 @@
     div.container-fluid {
         margin: 0 !important;
         padding: 0 !important;
-        /* position: absolute; */
-        /* top: 3.4em; */
         height: 100%;
         width: 100%;
         display: flex;
@@ -70,9 +68,9 @@
     /*----------------------------------*/
 
     div.member-bottom {
-        position: relative;
+        position: absolute;
         display: flex;
-        /* top: 0; */
+        top: 3.4em;
         width: 100%;
         /* left: 0; */
         height: 3.5em;
@@ -80,12 +78,7 @@
         overflow-y: hidden;
         background: rgba(23, 41, 76, 0.9);
     }
-    div.test-1{
-        display: flex;
-    }
-    div.test{
-        display: flex;
-    }
+
     div.administrator-img {
         display: flex;
         align-items: center;
