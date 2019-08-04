@@ -7,7 +7,11 @@
 
 html, body {
     font-family: 'Noto Serif TC', serif;
-    background: rgb(255, 255, 255);
+    /* background: rgb(255, 255, 255); */
+    /* background: url(../imgs/background-content.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-position: 40%; */
+    /* background-size: cover; */
     height: 100%;
     overflow-x: hidden;
     
@@ -18,7 +22,6 @@ div.container-fluid {
     margin: 0 !important;
     position: absolute;
     top: 3.3em;
-    height: 100%;
 }
 div.content{
     width:30%;
@@ -32,10 +35,16 @@ a:hover{
 /*            卡片設定               */
 
 /*----------------------------------*/
+div.card-set{
+    border:none;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
 .card-body{
     display: flex;
     justify-content: center;
+
 }
+
 div.member-img{
     display: flex;
     justify-content: center;
@@ -55,6 +64,7 @@ div.name-set{
     margin-left: 0.5em;
 }
 div.on-off-set{
+    margin-top: 0.5em;
     margin-left: 0.5em;
 }
 div.test-form-group-set{
@@ -231,56 +241,56 @@ button.delete-btn{
 @media screen and (min-width:2100px){
     div.content{
         width:20%;
-        margin: 4em auto;
+        margin: 0em auto;
     }
 }
 @media screen and (max-width:1880px){
     div.content{
         width:25%;
-        margin: 4em auto;
+        margin: 0em auto;
     }
 }
 
 @media screen and (max-width:1680px){
     div.content{
-        width:30%;
-        margin: 6em auto;
+        width:33%;
+        margin: 0em auto;
     }
 }
 @media screen and (max-width:1350px){
     div.content{
-        width:35%;
-        margin: 6em auto;
+        width:38%;
+        margin: 0em auto;
     }
 }
 @media screen and (max-width:1150px){
     div.content{
-        width:40%;
-        margin: 1em auto;
+        width:45%;
+        margin: 0em auto;
     }
 }
 @media screen and (max-width:1024px){
     div.content{
         width:50%;
-        margin: 0.5em auto;
+        margin: 0em auto;
     }
 }
 @media screen and (max-width:901px){
     div.content{
         width:55%;
-        margin: 6em auto;
+        margin: 0em auto;
     }
 }
 @media screen and (max-width:801px){
     div.content{
         width:60%;
-        margin: 6em auto;
+        margin: 0em auto;
     }
 }
 @media screen and (max-width:701px){
     div.content{
         width:65%;
-        margin: 6em auto;
+        margin: 0em auto;
     }
 }
 @media screen and (max-width:450px){

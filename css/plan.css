@@ -156,13 +156,15 @@
     }
 
     .member-img-trash {
-        /* position: relative; */
+        position: relative;
     }
 
     .member-delete-icon {
         position: absolute;
-        left: 2.5em;
-        bottom: 1.6em;
+        height: 0.9em;
+        width: 0.9em;
+        left: 2.6em;
+        bottom: 1.9em;
         display: none;
         color: rgb(247, 247, 247);
     }

@@ -9,8 +9,8 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/plan.css">
+    <link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="css/Plan.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Handlee" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 </head>
@@ -25,9 +25,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav">
-                <li><a href="member.html"> <i class="far fa-user fa-lg"></i>會員</a></li>
-                <li><a href="index.html"><i class="fas fa-book fa-lg"></i>計畫</a></li>
-                <li><a href="mywork.html"> <i class="far fa-edit fa-lg"></i>我的工作</a></li>
+                <li><a href="Member.html"> <i class="far fa-user fa-lg"></i>會員</a></li>
+                <li><a href="Index.html"><i class="fas fa-book fa-lg"></i>計畫</a></li>
+                <li><a href="Mywork.html"> <i class="far fa-edit fa-lg"></i>我的工作</a></li>
             </ul>
             <form class="search">
                 <input class="search-input" type="text" name="search" placeholder="Search">
@@ -52,15 +52,12 @@
             <div class="administrator-img" id="admin-move">
                 <div class="member-img-trash">
                     <img src="imgs/gray-cat.png" class="img-photo">
-                    <a href="#"><i class="fas fa-times-circle member-delete-icon"></i></a>
                 </div>
                 <div class="member-img-trash">
                     <img src="imgs/gray-cat.png" class="img-photo">
-                    <a href="#"><i class="fas fa-times-circle member-delete-icon"></i></a>
                 </div>
                 <div class="member-img-trash">
                     <img src="imgs/gray-cat.png" class="img-photo">
-                    <a href="#"><i class="fas fa-times-circle member-delete-icon"></i></a>
                 </div>
             </div>
 
@@ -72,15 +69,15 @@
             <div class="member-img" id="member-move">
                 <div class="member-img-trash">
                     <img src="imgs/gray-cat.png" class="img-photo">
-                    <a href="#"><i class="fas fa-times-circle member-delete-icon"></i></a>
+                    <a href="#"><img src="imgs/delete1.png" class="member-delete-icon"></a>
                 </div>
                 <div class="member-img-trash">
                     <img src="imgs/gray-cat.png" class="img-photo">
-                    <a href="#"><i class="fas fa-times-circle member-delete-icon"></i></a>
+                    <a href="#"><img src="imgs/delete1.png" class="member-delete-icon"></a>
                 </div>
                 <div class="member-img-trash">
                     <img src="imgs/gray-cat.png" class="img-photo">
-                    <a href="#"><i class="fas fa-times-circle member-delete-icon"></i></a>
+                    <a href="#"><img src="imgs/delete1.png" class="member-delete-icon"></a>
                 </div>
             </div>
 
@@ -94,7 +91,7 @@
         </div>
         <!-----------------------------bottom結束--------------------------------->
         <!--列表-->
-        <div class="deck" id="work-total-move">                
+        <div class="deck" id="work-total-move">
             <div class="work-total">
                 <div class="work-header">
                     <input type="text" class="form-control input-style" placeholder="尚未開始">
@@ -1319,7 +1316,7 @@
     <script src="./js/Plan_AdminMessenge.js"></script>
     <script src="./js/Plan_MoveHoverText.js"></script>
     <script src="./js/Plan_StopPropagation.js"></script>
-
+    <script src="./js/Plan_Datetime.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"

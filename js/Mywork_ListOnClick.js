@@ -23,10 +23,12 @@ $(document).ready(function () {
     $('#list-1').on("click", function () {
         if (isTrue1) {
             $('.card-list-1').css({'background': 'rgba(52, 58, 64,0.7)'});
+            $('.card-list-1').css({'margin-bottom': '1em'});
             $('.triangle-1').css({'border-width': '8px 7px 0 7px','border-color':'rgb(192, 192, 192) transparent transparent transparent'});
             isTrue1 = false;
         } else {
             $('.card-list-1').css({'background': 'rgba(52, 58, 64,1)'});
+            $('.card-list-1').css({'margin-bottom': '0'});
             $('.triangle-1').css({'border-width': '0 7px 8px 7px','border-color':'transparent transparent rgb(192, 192, 192) transparent'});
             isTrue1 = true;
         }
@@ -34,6 +36,7 @@ $(document).ready(function () {
     $('#list-2').on("click", function () {
         if (isTrue2) {
             $('.card-list-2').css({'background': 'rgba(52, 58, 64,0.7)'});
+            $('.card-list-2').css({'margin-bottom': '1em'});
             $('.triangle-2').css({'border-width': '8px 7px 0 7px','border-color':'rgb(192, 192, 192) transparent transparent transparent'});
             isTrue2 = false;
         } else {
