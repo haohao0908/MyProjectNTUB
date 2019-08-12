@@ -476,7 +476,7 @@
         height: 8px;
         line-height: 100px;
         margin: 0 4px 4px 0;
-        background-color: #6c7afa;
+        background-color: #61bd4f;
         border-radius: 4px;
         color: rgb(255, 255, 255);
         display: block;
@@ -498,7 +498,7 @@
         height: 8px;
         line-height: 100px;
         margin: 0 4px 4px 0;
-        background-color: #585300;
+        background-color: #f2d600;
         border-radius: 4px;
         color: rgb(255, 255, 255);
         display: block;
@@ -521,7 +521,70 @@
         height: 8px;
         line-height: 100px;
         margin: 0 4px 4px 0;
-        background-color: #ff807c;
+        background-color: #ff9f1a;
+        border-radius: 4px;
+        color: rgb(255, 255, 255);
+        display: block;
+        margin-right: 4px;
+        overflow: hidden;
+        position: relative;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-width: 45px;
+        max-width: 45px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    span.card-label-4 {
+        float: left;
+        font-size: 13px;
+        font-weight: 700;
+        height: 8px;
+        line-height: 100px;
+        margin: 0 4px 4px 0;
+        background-color: #eb5a46;
+        border-radius: 4px;
+        color: rgb(255, 255, 255);
+        display: block;
+        margin-right: 4px;
+        overflow: hidden;
+        position: relative;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-width: 45px;
+        max-width: 45px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    span.card-label-5 {
+        float: left;
+        font-size: 13px;
+        font-weight: 700;
+        height: 8px;
+        line-height: 100px;
+        margin: 0 4px 4px 0;
+        background-color: #c377e0;
+        border-radius: 4px;
+        color: rgb(255, 255, 255);
+        display: block;
+        margin-right: 4px;
+        overflow: hidden;
+        position: relative;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-width: 45px;
+        max-width: 45px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    span.card-label-6 {
+        float: left;
+        font-size: 13px;
+        font-weight: 700;
+        height: 8px;
+        line-height: 100px;
+        margin: 0 4px 4px 0;
+        background-color: #0079bf;
         border-radius: 4px;
         color: rgb(255, 255, 255);
         display: block;
